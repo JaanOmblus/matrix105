@@ -1,0 +1,31 @@
+<ion-header>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+  <ion-title>Sektori analüüs</ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-button routerLink="/subpageShmShP">Vaata oma positsiooni võrdlust sektoris
+  <ion-icon slot="start" name="ellipse"></ion-icon>
+  </ion-button>
+
+<ion-content>
+<br>  
+<div class="tekstselgit">  
+Ettevõtte võrdlus tegevussektoris
+</div>
+<br>
+<div class="tekstselgit2">  
+Nii nagu konkreetset ettevõtet, võivad majandussuhtarvud kirjeldada ka ettevõtete üldist kogumit/klastrit/piirkonda. Võttes mingi ettevõtete kogumi mediaansuhtarvud on võimalik oma ettevõtet võrrelda nende suhtarvude vastu ja saada teada, kas ollakse n.ö. positiivsel või negatiivsel poolel.  Alljärgnevalt on välja toodud mediaansuhtarvud tegevussektori lõikes, grupeerituna omakorda nelja alajaotusesse.  See on võrdlusbaasiks, mida edasises analüüsis kasutatakse.
+</div>
+
+<br>
+<div  [ngStyle]="{backgroundColor: 'rgb(30, 20, 75, 0.72)' }"><br></div>
+
+<matrix-sector></matrix-sector>
+<br>
+<div  [ngStyle]="{backgroundColor: 'rgb(30, 20, 75, 0.72)' }"><br></div>
+
+<br><br><br>
+</ion-content>

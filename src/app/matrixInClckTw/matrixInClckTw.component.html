@@ -1,0 +1,49 @@
+
+<br>
+
+<div class="tekstselgitItal">
+  Kohustuste seis
+</div>
+<br>
+<div class="tekstselgit2">
+Kohustuste seis tuleneb vastava masinõppemudeli hinnangust. See on natuke kompleksem näitaja, kui kohustuste osakaal bilansis, kuid analoogne (samas see võtab arvesse kolmandaid momente, mis annab ülevaate, kas kohustusi saab suurendada või mitte). Mida suurem on see näitaja, seda probleemsem. Kohustuste seis esitatakse protsendina, 100% on kõige kehvem, 0% on kõige parem. Alljärgnevalt on võimalik kohustuste seisu muuta, et näha, kuidas süsteem sellele reageeriks. Lähteolukorra sisendina on toodud seis, mida vastav masinõppe mudel arvab.
+</div>
+
+<div class="clck">
+<!--p-->
+<ngx-gauge 
+size=80
+[type]="gaugeType" 
+
+[value]="lahtemudel" 
+[label]="gaugeLabel" 
+[append]="gaugeAppendText"
+[thresholds]="thresholdConfig"
+[size]="gaugeSize"
+[cap]="gaugeCap"
+[thick]="gaugeThick"
+[foregroundColor]="gaugeForegroundColor"
+[backgroundColor]="gaugeBackgroundColor"
+[duration]="gaugeDuration"
+[animate]="gaugeAnimate"
+[aria-label]="gaugeAriaLabel"
+
+
+>
+</ngx-gauge>
+<input type="range" min="1" max="100"   min="0" max="100" [(ngModel)]="currentValue" step="1" class="slider"  (input)="gaugeChange($event)">
+<!--/p-->
+
+</div>
+
+
+<!--div class="clck2">
+{{currentValue}}
+
+</div-->
+
+<div class="clck2">
+
+  Ole täitsa, vali endale nüüd sobiv väärtus, millist kohustuste seisu sooviksid näha. Liiguta alumist sliderit ja lase unistustel lennata. Samas pea silmas, et kergem on kohustusi suurendada (kui keegi annab laenu veel), mitte vähendada (niisama mahakirjutamine ei ole õige).
+
+</div>

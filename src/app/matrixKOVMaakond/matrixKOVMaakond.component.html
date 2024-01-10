@@ -1,0 +1,112 @@
+<!--p>Maakonna tekst</p-->
+<div class="tekstselgit">
+<p>Teie Maakond: {{ maakonnanimi }}</p>
+</div>
+
+<div class="tekstselgit2">
+
+<p>Alljärgnevalt on võimalik saada informatsiooni selle kohta, millised on suhtarvude mediaanväärtused teie tegevuspiirkonna maakonnas, juhul, kui tegevuspiirkond allub konkreetsele maakonnale.</p>
+
+</div>
+
+<button (click)="onclick()" type="button" class="nupp">
+{{ReadMore?"Likviidsus":"Peida"}}
+</button>
+
+<ng-container *ngIf="visible">
+
+<table id="employees">
+<tr>
+  <th>LVKK</th>
+  <th>MVK</th>
+  <th>RK</th>
+  <th>LLLK</th>
+  <th>LLVK</th>
+  <th>LLOK</th>
+</tr>
+<tr *ngFor="let kovid1 of oigeKirjeMaakond">
+  <td>{{kovid1.LVKK_Median}}</td>
+  <td>{{kovid1.MVK_Median}}</td>
+  <td>{{kovid1.RK_Median}}</td>
+  <td>{{kovid1.LLLK_Median}}</td>
+  <td>{{kovid1.LLVK_Median}}</td>
+  <td>{{kovid1.LLOK_Median}}</td>
+</tr>
+</table>
+
+</ng-container>
+<br>
+<button (click)="onclick2()" type="button" class="nupp">
+{{ReadMore2?"Efektiivsus":"Peida"}}
+</button>
+
+
+<ng-container *ngIf="visible2">
+
+<table id="employees">
+<tr>
+  <th>VaKK</th>
+  <th>LVKaK</th>
+  <th>VKK</th>
+</tr>
+<tr *ngFor="let kovid2 of oigeKirjeMaakond">
+  <td>{{kovid2.VaKK_Median}}</td>
+  <td>{{kovid2.LVKaK_Median}}</td>
+  <td>{{kovid2.VKK_Median}}</td>
+</tr>
+</table>
+
+
+</ng-container>
+
+<br>
+
+<button (click)="onclick3()" type="button" class="nupp">
+{{ReadMore3?"Struktuur":"Peida"}}
+</button>
+<ng-container *ngIf="visible3">
+
+<table id="employees">
+<tr>
+  <th>VK</th>
+  <th>KOS</th>
+  <th>IKK</th>
+  <th>LKKK</th>
+  <th>PKKK</th>
+</tr>
+<tr *ngFor="let kovid3 of oigeKirjeMaakond">
+  <td>{{kovid3.VK_Median}}</td>
+  <td>{{kovid3.KOS_Median}}</td>
+  <td>{{kovid3.IKK_Median}}</td>
+  <td>{{kovid3.LKKKK_Median}}</td>
+  <td>{{kovid3.PKKKK_Median}}</td>
+</tr>
+</table>
+
+
+</ng-container>
+
+<br>
+
+<button (click)="onclick4()" type="button" class="nupp">
+{{ReadMore4?"Rentaablus":"Peida"}}
+</button>
+<ng-container *ngIf="visible4">
+
+<table id="employees">
+<tr>
+  <th>AKM</th>
+  <th>PKM</th>
+  <th>ROA</th>
+  <th>ROE</th>
+</tr>
+<tr *ngFor="let kovid4 of oigeKirjeMaakond">
+  <td>{{kovid4.AKM_Median}}</td>
+  <td>{{kovid4.PKM_Median}}</td>
+  <td>{{kovid4.ROA_Median}}</td>
+  <td>{{kovid4.ROE_Median}}</td>
+</tr>
+</table>
+
+
+</ng-container>

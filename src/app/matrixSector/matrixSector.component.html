@@ -1,0 +1,116 @@
+<div class="tekstselgit">
+  <p>Teie tegevussektor: {{ sektorinimi }}</p>
+  </div>
+
+<!--p>Sectori värk</p>
+
+<p>Sektori nimi: {{ sektorinimi }}</p-->
+  <div class="tekstselgit2">
+
+    <p>Alljärgnevalt on võimalik saada informatsiooni selle kohta, millised on suhtarvude mediaanväärtused teie tegevussektoris.</p>
+
+  </div>  
+
+  <button (click)="onclick()" type="button" class="nupp">
+    {{ReadMore?"Likviidsus":"Peida"}}
+    </button>
+    
+    <ng-container *ngIf="visible">
+    
+    <table id="employees">
+    <tr>
+      <th>LVKK</th>
+      <th>MVK</th>
+      <th>RK</th>
+      <th>LLLK</th>
+      <th>LLVK</th>
+      <th>LLOK</th>
+    </tr>
+    <tr *ngFor="let sekid1 of oigeKirjeSektor">
+      <td>{{sekid1.LVKK_Median}}</td>
+      <td>{{sekid1.MVK_Median}}</td>
+      <td>{{sekid1.RK_Median}}</td>
+      <td>{{sekid1.LLLK_Median}}</td>
+      <td>{{sekid1.LLVK_Median}}</td>
+      <td>{{sekid1.LLOK_Median}}</td>
+    </tr>
+    </table>
+    
+    </ng-container>
+
+    <br>
+
+    <button (click)="onclick2()" type="button" class="nupp">
+    {{ReadMore2?"Efektiivsus":"Peida"}}
+    </button>
+  
+  
+    <ng-container *ngIf="visible2">
+  
+    <table id="employees">
+    <tr>
+      <th>VaKK</th>
+      <th>LVKaK</th>
+      <th>VKK</th>
+    </tr>
+    <tr *ngFor="let sekid2 of oigeKirjeSektor">
+      <td>{{sekid2.VaKK_Median}}</td>
+      <td>{{sekid2.LVKaK_Median}}</td>
+      <td>{{sekid2.VKK_Median}}</td>
+    </tr>
+    </table>
+
+    
+    </ng-container>
+
+    <br>
+
+    <button (click)="onclick3()" type="button" class="nupp">
+      {{ReadMore3?"Struktuur":"Peida"}}
+    </button>
+    <ng-container *ngIf="visible3">
+  
+      <table id="employees">
+      <tr>
+        <th>VK</th>
+        <th>KOS</th>
+        <th>IKK</th>
+        <th>LKKK</th>
+        <th>PKKK</th>
+      </tr>
+      <tr *ngFor="let sekid3 of oigeKirjeSektor">
+        <td>{{sekid3.VK_Median}}</td>
+        <td>{{sekid3.KOS_Median}}</td>
+        <td>{{sekid3.IKK_Median}}</td>
+        <td>{{sekid3.LKKKK_Median}}</td>
+        <td>{{sekid3.PKKKK_Median}}</td>
+      </tr>
+      </table>
+  
+      
+      </ng-container>
+
+      <br>
+
+    <button (click)="onclick4()" type="button" class="nupp">
+      {{ReadMore4?"Rentaablus":"Peida"}}
+    </button>
+    <ng-container *ngIf="visible4">
+  
+      <table id="employees">
+      <tr>
+        <th>AKM</th>
+        <th>PKM</th>
+        <th>ROA</th>
+        <th>ROE</th>
+      </tr>
+      <tr *ngFor="let sekid4 of oigeKirjeSektor">
+        <td>{{sekid4.AKM_Median}}</td>
+        <td>{{sekid4.PKM_Median}}</td>
+        <td>{{sekid4.ROA_Median}}</td>
+        <td>{{sekid4.ROE_Median}}</td>
+      </tr>
+      </table>
+  
+      
+      </ng-container>

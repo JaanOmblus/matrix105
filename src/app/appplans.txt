@@ -1,0 +1,26 @@
+//Ringi kõrvale teine komponent-seier, võtab sama numbrit sisendiks.
+
+Public page, comment element.  Võiks olla nii, et lehekülg avaneb luba andes.
+Akki teeks nii, et nonhide elemendiga avaneb mupp ja sealt uus lehekülg...  Sinna kuvatakse mingi tulem ja public saab
+kommenteerida.  Kutsume kasvõi konsultatsiooni mooduliks.
+
+Geographic comparison lõpuni teha.
+
+Sektor comparison sisse tuua.
+
+Flash kaartide lahendus edasi teha, hetkel sisendi analüüsi all...  Flash kaart võiks probleemi korral punaseks minna, 
+hea olukorra korral roheline olla, muidu kollane...
+
+Sisendi lehekülg.
+
+Kui kohustuste % on varasemaga vähendatud üle 20%, siis robot räägib, et liiga palju olete vähendanud, pole justkui loogilist alust.  Kui ei muuda, siis robot saab rääkida, et ei ole muutunud.  Kui suurendati, siis võiks millegi vastu hoiatada - näiteks punase korral rääkida midagi jne. jne.  Palju suurendas, siis küsida, et kust nii palju laenu said.  Suurendamise korral vaadata efektiivsuse vastu ja küsida, kas on ikka OK, kas efektiivsus tuleb järgi.
+
+
+KONSULTANT
+
+Konsultandile väljastatud eepos, selle pdf mahalaadimine....
+
+OMATOODANG
+
+Omatoodangu mahalaadimine....
+
